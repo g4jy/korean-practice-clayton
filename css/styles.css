@@ -591,6 +591,63 @@ body.hide-rom .card-romanization { display: none !important; }
   opacity: 0.6;
 }
 
+/* --- Mastery Stats --- */
+.mastery-stats {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.mastery-stats .stat-know { color: #00B894; font-weight: 600; }
+.mastery-stats .stat-unsure { color: #FDCB6E; font-weight: 600; }
+.mastery-stats .stat-dont-know { color: #E17055; font-weight: 600; }
+
+/* --- Card Status Badge --- */
+.card-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.card-badge.know { background: #00B894; }
+.card-badge.unsure { background: #FDCB6E; }
+.card-badge.dont-know { background: #E17055; }
+
+/* --- Review Banner --- */
+.review-banner {
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.review-exit-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.15s;
+}
+
+.review-exit-btn:hover { background: rgba(255,255,255,0.35); }
+
 /* --- Utilities --- */
 .hidden { display: none !important; }
 
