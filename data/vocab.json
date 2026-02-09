@@ -2,10 +2,10 @@
   "student": "Clayton",
   "intro": {
     "topics": [
-      { "kr": "\uc800\ub294", "rom": "JEO-NEUN", "en": "I (topic)" },
-      { "kr": "\uc5ec\uae30\ub294", "rom": "YEO-GI-NEUN", "en": "This place (topic)" },
-      { "kr": "\uc774\uac70\ub294", "rom": "I-GEO-NEUN", "en": "This thing (topic)" },
-      { "kr": "\uc774\ub984\uc740", "rom": "I-REUM-EUN", "en": "My name (topic)" }
+      { "kr": "\uc800\ub294", "rom": "JEO-NEUN", "en": "I (topic)", "compatibleNounTypes": ["person"] },
+      { "kr": "\uc5ec\uae30\ub294", "rom": "YEO-GI-NEUN", "en": "This place (topic)", "compatibleNounTypes": ["place"] },
+      { "kr": "\uc774\uac70\ub294", "rom": "I-GEO-NEUN", "en": "This thing (topic)", "compatibleNounTypes": ["food", "place"] },
+      { "kr": "\uc774\ub984\uc740", "rom": "I-REUM-EUN", "en": "My name (topic)", "compatibleNounTypes": ["name"] }
     ],
     "nouns": [
       { "kr": "\ud559\uc0dd", "rom": "HAK-SAENG", "en": "student", "category": "person" },
@@ -27,7 +27,8 @@
       { "kr": "\uae40\uce58", "rom": "GIM-CHI", "en": "kimchi", "category": "food" },
       { "kr": "\uc11c\uc6b8", "rom": "SEO-UL", "en": "Seoul", "category": "place" },
       { "kr": "\ubd80\uc0b0", "rom": "BU-SAN", "en": "Busan", "category": "place" },
-      { "kr": "\uc81c\uc8fc", "rom": "JE-JU", "en": "Jeju", "category": "place" }
+      { "kr": "\uc81c\uc8fc", "rom": "JE-JU", "en": "Jeju", "category": "place" },
+      { "kr": "Clayton", "rom": "KEUL-LEI-TEUN", "en": "Clayton", "category": "name" }
     ]
   },
   "action": {
