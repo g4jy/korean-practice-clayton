@@ -20,10 +20,19 @@
     return App.hasJongseong(word[word.length - 1]) ? '이에요' : '예요';
   }
 
+  /* --- Filter nouns compatible with current topic --- */
+  function compatibleNouns() {
+    const topic = intro.topics[topicIdx];
+    if (!topic.compatibleNounTypes) return intro.nouns;
+    return intro.nouns.filter(n => topic.compatibleNounTypes.includes(n.category));
+  }
+
   /* --- Render --- */
   function render() {
     const topic = intro.topics[topicIdx];
-    const noun = intro.nouns[nounIdx];
+    const compat = compatibleNouns();
+    if (nounIdx >= compat.length) nounIdx = 0;
+    const noun = compat[nounIdx];
 
     // Topic block
     topicBlock.querySelector('.block-kr').textContent = topic.kr;
@@ -49,7 +58,7 @@
     if (topicEn === 'I') return 'I am ' + addArticle(nounEn) + '.';
     if (topicEn === 'This place') return 'This place is ' + addArticle(nounEn) + '.';
     if (topicEn === 'This thing') return 'This is ' + nounEn + '.';
-    if (topicEn === 'My name') return 'My name is Clayton.';
+    if (topicEn === 'My name') return 'My name is ' + nounEn + '.';
     return topicEn + ' is ' + nounEn + '.';
   }
 
@@ -65,25 +74,42 @@
   /* --- Block click handlers --- */
   topicBlock.addEventListener('click', () => {
     topicIdx = (topicIdx + 1) % intro.topics.length;
+    nounIdx = 0; // Reset noun index for new topic
     App.pulseBlock(topicBlock);
-    App.speak(intro.topics[topicIdx].kr);
     render();
   });
 
   nounBlock.addEventListener('click', () => {
-    nounIdx = (nounIdx + 1) % intro.nouns.length;
+    const compat = compatibleNouns();
+    if (compat.length <= 1) return;
+    nounIdx = (nounIdx + 1) % compat.length;
     App.pulseBlock(nounBlock);
-    App.speak(intro.nouns[nounIdx].kr);
     render();
   });
 
   /* --- TTS for full sentence --- */
   ttsBtn.addEventListener('click', () => {
     const topic = intro.topics[topicIdx];
-    const noun = intro.nouns[nounIdx];
+    const compat = compatibleNouns();
+    const noun = compat[nounIdx] || compat[0];
     const particle = getParticle(noun.kr);
     App.speak(topic.kr + ' ' + noun.kr + particle);
   });
+
+  /* --- Add TTS buttons to blocks --- */
+  function addTtsBtn(blockEl) {
+    const btn = document.createElement('button');
+    btn.className = 'block-tts-btn';
+    btn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 010 7.07" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" stroke-linecap="round"/></svg>';
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const kr = blockEl.querySelector('.block-kr').textContent;
+      App.speak(kr);
+    });
+    blockEl.appendChild(btn);
+  }
+
+  [topicBlock, nounBlock].forEach(addTtsBtn);
 
   /* --- Block colors (reuse subject for topic, object for noun) --- */
   topicBlock.style.background = 'var(--block-subject)';
