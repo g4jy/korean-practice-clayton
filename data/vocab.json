@@ -2,178 +2,1004 @@
   "student": "Clayton",
   "intro": {
     "topics": [
-      { "kr": "\uc800\ub294", "rom": "JEO-NEUN", "en": "I (topic)", "compatibleNounTypes": ["person"] },
-      { "kr": "\uc5ec\uae30\ub294", "rom": "YEO-GI-NEUN", "en": "This place (topic)", "compatibleNounTypes": ["place"] },
-      { "kr": "\uc774\uac70\ub294", "rom": "I-GEO-NEUN", "en": "This thing (topic)", "compatibleNounTypes": ["food", "place"] },
-      { "kr": "\uc774\ub984\uc740", "rom": "I-REUM-EUN", "en": "My name (topic)", "compatibleNounTypes": ["name"] }
+      {
+        "kr": "저는",
+        "rom": "JEO-NEUN",
+        "en": "I (topic)",
+        "compatibleNounTypes": [
+          "person"
+        ]
+      },
+      {
+        "kr": "여기는",
+        "rom": "YEO-GI-NEUN",
+        "en": "This place (topic)",
+        "compatibleNounTypes": [
+          "place"
+        ]
+      },
+      {
+        "kr": "이거는",
+        "rom": "I-GEO-NEUN",
+        "en": "This thing (topic)",
+        "compatibleNounTypes": [
+          "food",
+          "place"
+        ]
+      },
+      {
+        "kr": "이름은",
+        "rom": "I-REUM-EUN",
+        "en": "My name (topic)",
+        "compatibleNounTypes": [
+          "name"
+        ]
+      }
     ],
     "nouns": [
-      { "kr": "\ud559\uc0dd", "rom": "HAK-SAENG", "en": "student", "category": "person" },
-      { "kr": "\uc120\uc0dd\ub2d8", "rom": "SEON-SAENG-NIM", "en": "teacher", "category": "person" },
-      { "kr": "\uce5c\uad6c", "rom": "CHIN-GU", "en": "friend", "category": "person" },
-      { "kr": "\uc0ac\ub78c", "rom": "SA-RAM", "en": "person", "category": "person" },
-      { "kr": "\ud55c\uad6d \uc0ac\ub78c", "rom": "HAN-GUK SA-RAM", "en": "Korean person", "category": "person" },
-      { "kr": "\ubbf8\uad6d \uc0ac\ub78c", "rom": "MI-GUK SA-RAM", "en": "American person", "category": "person" },
-      { "kr": "\uce74\ud398", "rom": "KA-PE", "en": "cafe", "category": "place" },
-      { "kr": "\uc2dd\ub2f9", "rom": "SIK-DANG", "en": "restaurant", "category": "place" },
-      { "kr": "\ud559\uad50", "rom": "HAK-GYO", "en": "school", "category": "place" },
-      { "kr": "\ud68c\uc0ac", "rom": "HOE-SA", "en": "office/company", "category": "place" },
-      { "kr": "\ud654\uc7a5\uc2e4", "rom": "HWA-JANG-SIL", "en": "bathroom", "category": "place" },
-      { "kr": "\uacf5\ud56d", "rom": "GONG-HANG", "en": "airport", "category": "place" },
-      { "kr": "\uc9d1", "rom": "JIP", "en": "home", "category": "place" },
-      { "kr": "\ucee4\ud53c", "rom": "KEO-PI", "en": "coffee", "category": "food" },
-      { "kr": "\ubb3c", "rom": "MUL", "en": "water", "category": "food" },
-      { "kr": "\ubc25", "rom": "BAP", "en": "rice/meal", "category": "food" },
-      { "kr": "\uae40\uce58", "rom": "GIM-CHI", "en": "kimchi", "category": "food" },
-      { "kr": "\uc11c\uc6b8", "rom": "SEO-UL", "en": "Seoul", "category": "place" },
-      { "kr": "\ubd80\uc0b0", "rom": "BU-SAN", "en": "Busan", "category": "place" },
-      { "kr": "\uc81c\uc8fc", "rom": "JE-JU", "en": "Jeju", "category": "place" },
-      { "kr": "Clayton", "rom": "KEUL-LEI-TEUN", "en": "Clayton", "category": "name" }
+      {
+        "kr": "학생",
+        "rom": "HAK-SAENG",
+        "en": "student",
+        "category": "person"
+      },
+      {
+        "kr": "선생님",
+        "rom": "SEON-SAENG-NIM",
+        "en": "teacher",
+        "category": "person"
+      },
+      {
+        "kr": "친구",
+        "rom": "CHIN-GU",
+        "en": "friend",
+        "category": "person"
+      },
+      {
+        "kr": "사람",
+        "rom": "SA-RAM",
+        "en": "person",
+        "category": "person"
+      },
+      {
+        "kr": "한국 사람",
+        "rom": "HAN-GUK SA-RAM",
+        "en": "Korean person",
+        "category": "person"
+      },
+      {
+        "kr": "미국 사람",
+        "rom": "MI-GUK SA-RAM",
+        "en": "American person",
+        "category": "person"
+      },
+      {
+        "kr": "카페",
+        "rom": "KA-PE",
+        "en": "cafe",
+        "category": "place"
+      },
+      {
+        "kr": "식당",
+        "rom": "SIK-DANG",
+        "en": "restaurant",
+        "category": "place"
+      },
+      {
+        "kr": "학교",
+        "rom": "HAK-GYO",
+        "en": "school",
+        "category": "place"
+      },
+      {
+        "kr": "회사",
+        "rom": "HOE-SA",
+        "en": "office/company",
+        "category": "place"
+      },
+      {
+        "kr": "화장실",
+        "rom": "HWA-JANG-SIL",
+        "en": "bathroom",
+        "category": "place"
+      },
+      {
+        "kr": "공항",
+        "rom": "GONG-HANG",
+        "en": "airport",
+        "category": "place"
+      },
+      {
+        "kr": "집",
+        "rom": "JIP",
+        "en": "home",
+        "category": "place"
+      },
+      {
+        "kr": "커피",
+        "rom": "KEO-PI",
+        "en": "coffee",
+        "category": "food"
+      },
+      {
+        "kr": "물",
+        "rom": "MUL",
+        "en": "water",
+        "category": "food"
+      },
+      {
+        "kr": "밥",
+        "rom": "BAP",
+        "en": "rice/meal",
+        "category": "food"
+      },
+      {
+        "kr": "김치",
+        "rom": "GIM-CHI",
+        "en": "kimchi",
+        "category": "food"
+      },
+      {
+        "kr": "서울",
+        "rom": "SEO-UL",
+        "en": "Seoul",
+        "category": "place"
+      },
+      {
+        "kr": "부산",
+        "rom": "BU-SAN",
+        "en": "Busan",
+        "category": "place"
+      },
+      {
+        "kr": "제주",
+        "rom": "JE-JU",
+        "en": "Jeju",
+        "category": "place"
+      },
+      {
+        "kr": "Clayton",
+        "rom": "KEUL-LEI-TEUN",
+        "en": "Clayton",
+        "category": "name"
+      }
     ]
   },
   "action": {
     "subjects": [
-      { "kr": "\uc800\ub294", "rom": "JEO-NEUN", "en": "I" }
+      {
+        "kr": "저는",
+        "rom": "JEO-NEUN",
+        "en": "I"
+      }
     ],
     "times": [
-      { "kr": "\uc5b4\uc81c", "rom": "EO-JE", "en": "yesterday", "tense": "past" },
-      { "kr": "\uc624\ub298", "rom": "O-NEUL", "en": "today", "tense": "present" },
-      { "kr": "\ub0b4\uc77c", "rom": "NAE-IL", "en": "tomorrow", "tense": "future" }
+      {
+        "kr": "어제",
+        "rom": "EO-JE",
+        "en": "yesterday",
+        "tense": "past"
+      },
+      {
+        "kr": "오늘",
+        "rom": "O-NEUL",
+        "en": "today",
+        "tense": "present"
+      },
+      {
+        "kr": "내일",
+        "rom": "NAE-IL",
+        "en": "tomorrow",
+        "tense": "future"
+      }
     ],
     "places": [
-      { "kr": "\uce74\ud398", "rom": "KA-PE", "en": "cafe", "formE": { "kr": "\uce74\ud398\uc5d0", "rom": "KA-PE-E" }, "formEseo": { "kr": "\uce74\ud398\uc5d0\uc11c", "rom": "KA-PE-E-SEO" } },
-      { "kr": "\uc2dd\ub2f9", "rom": "SIK-DANG", "en": "restaurant", "formE": { "kr": "\uc2dd\ub2f9\uc5d0", "rom": "SIK-DANG-E" }, "formEseo": { "kr": "\uc2dd\ub2f9\uc5d0\uc11c", "rom": "SIK-DANG-E-SEO" } },
-      { "kr": "\uc9d1", "rom": "JIP", "en": "home", "formE": { "kr": "\uc9d1\uc5d0", "rom": "JIB-E" }, "formEseo": { "kr": "\uc9d1\uc5d0\uc11c", "rom": "JIB-E-SEO" } },
-      { "kr": "\ud559\uad50", "rom": "HAK-GYO", "en": "school", "formE": { "kr": "\ud559\uad50\uc5d0", "rom": "HAK-GYO-E" }, "formEseo": { "kr": "\ud559\uad50\uc5d0\uc11c", "rom": "HAK-GYO-E-SEO" } },
-      { "kr": "\uacf5\ud56d", "rom": "GONG-HANG", "en": "airport", "formE": { "kr": "\uacf5\ud56d\uc5d0", "rom": "GONG-HANG-E" }, "formEseo": { "kr": "\uacf5\ud56d\uc5d0\uc11c", "rom": "GONG-HANG-E-SEO" } }
+      {
+        "kr": "카페",
+        "rom": "KA-PE",
+        "en": "cafe",
+        "formE": {
+          "kr": "카페에",
+          "rom": "KA-PE-E"
+        },
+        "formEseo": {
+          "kr": "카페에서",
+          "rom": "KA-PE-E-SEO"
+        }
+      },
+      {
+        "kr": "식당",
+        "rom": "SIK-DANG",
+        "en": "restaurant",
+        "formE": {
+          "kr": "식당에",
+          "rom": "SIK-DANG-E"
+        },
+        "formEseo": {
+          "kr": "식당에서",
+          "rom": "SIK-DANG-E-SEO"
+        }
+      },
+      {
+        "kr": "집",
+        "rom": "JIP",
+        "en": "home",
+        "formE": {
+          "kr": "집에",
+          "rom": "JIB-E"
+        },
+        "formEseo": {
+          "kr": "집에서",
+          "rom": "JIB-E-SEO"
+        }
+      },
+      {
+        "kr": "학교",
+        "rom": "HAK-GYO",
+        "en": "school",
+        "formE": {
+          "kr": "학교에",
+          "rom": "HAK-GYO-E"
+        },
+        "formEseo": {
+          "kr": "학교에서",
+          "rom": "HAK-GYO-E-SEO"
+        }
+      },
+      {
+        "kr": "공항",
+        "rom": "GONG-HANG",
+        "en": "airport",
+        "formE": {
+          "kr": "공항에",
+          "rom": "GONG-HANG-E"
+        },
+        "formEseo": {
+          "kr": "공항에서",
+          "rom": "GONG-HANG-E-SEO"
+        }
+      }
     ],
     "objects": [
-      { "kr": "\ucee4\ud53c", "rom": "KEO-PI", "en": "coffee", "category": "drink" },
-      { "kr": "\ubb3c", "rom": "MUL", "en": "water", "category": "drink" },
-      { "kr": "\ubc25", "rom": "BAP", "en": "rice/food", "category": "food" },
-      { "kr": "\uae40\uce58", "rom": "GIM-CHI", "en": "kimchi", "category": "food" }
+      {
+        "kr": "커피",
+        "rom": "KEO-PI",
+        "en": "coffee",
+        "category": "drink"
+      },
+      {
+        "kr": "물",
+        "rom": "MUL",
+        "en": "water",
+        "category": "drink"
+      },
+      {
+        "kr": "밥",
+        "rom": "BAP",
+        "en": "rice/food",
+        "category": "food"
+      },
+      {
+        "kr": "김치",
+        "rom": "GIM-CHI",
+        "en": "kimchi",
+        "category": "food"
+      },
+      {
+        "kr": "파스타",
+        "rom": "PA-SEU-TA",
+        "en": "pasta",
+        "category": "general"
+      },
+      {
+        "kr": "불고기",
+        "rom": "BUL-GO-GI",
+        "en": "bulgogi (Korean BBQ beef)",
+        "category": "general"
+      },
+      {
+        "kr": "차",
+        "rom": "CHA",
+        "en": "tea",
+        "category": "general"
+      },
+      {
+        "kr": "식당",
+        "rom": "SIK-DANG",
+        "en": "restaurant",
+        "category": "general"
+      },
+      {
+        "kr": "카페",
+        "rom": "KA-PE",
+        "en": "cafe",
+        "category": "general"
+      },
+      {
+        "kr": "집",
+        "rom": "JIP",
+        "en": "house / home",
+        "category": "general"
+      },
+      {
+        "kr": "학교",
+        "rom": "HAK-GYO",
+        "en": "school",
+        "category": "general"
+      },
+      {
+        "kr": "화장실",
+        "rom": "HWA-JANG-SIL",
+        "en": "bathroom / restroom",
+        "category": "general"
+      },
+      {
+        "kr": "여기",
+        "rom": "YEO-GI",
+        "en": "here / this place",
+        "category": "general"
+      },
+      {
+        "kr": "오늘",
+        "rom": "O-NEUL",
+        "en": "today",
+        "category": "general"
+      },
+      {
+        "kr": "친구",
+        "rom": "CHIN-GU",
+        "en": "friend",
+        "category": "general"
+      },
+      {
+        "kr": "언어 학교",
+        "rom": "EO-NEO HAK-GYO",
+        "en": "language school",
+        "category": "general"
+      }
     ],
     "verbs": [
       {
-        "id": "gada", "en": "go", "objectTypes": [],
+        "id": "gada",
+        "en": "go",
+        "objectTypes": [],
         "placeParticle": "e",
-        "past": "\uac14\uc5b4\uc694", "pastRom": "GA-SSEO-YO", "pastEn": "went",
-        "present": "\uac00\uc694", "presentRom": "GA-YO", "presentEn": "go",
-        "future": "\uac08 \uac70\uc608\uc694", "futureRom": "GAL GGEO-YE-YO", "futureEn": "will go"
+        "past": "갔어요",
+        "pastRom": "GA-SSEO-YO",
+        "pastEn": "went",
+        "present": "가요",
+        "presentRom": "GA-YO",
+        "presentEn": "go",
+        "future": "갈 거예요",
+        "futureRom": "GAL GGEO-YE-YO",
+        "futureEn": "will go"
       },
       {
-        "id": "meokda", "en": "eat", "objectTypes": ["food"],
+        "id": "meokda",
+        "en": "eat",
+        "objectTypes": [
+          "food"
+        ],
         "placeParticle": "eseo",
-        "past": "\uba39\uc5c8\uc5b4\uc694", "pastRom": "MEO-GEO-SSEO-YO", "pastEn": "ate",
-        "present": "\uba39\uc5b4\uc694", "presentRom": "MEO-GEO-YO", "presentEn": "eat",
-        "future": "\uba39\uc744 \uac70\uc608\uc694", "futureRom": "MEO-GEUL GGEO-YE-YO", "futureEn": "will eat"
+        "past": "먹었어요",
+        "pastRom": "MEO-GEO-SSEO-YO",
+        "pastEn": "ate",
+        "present": "먹어요",
+        "presentRom": "MEO-GEO-YO",
+        "presentEn": "eat",
+        "future": "먹을 거예요",
+        "futureRom": "MEO-GEUL GGEO-YE-YO",
+        "futureEn": "will eat"
       },
       {
-        "id": "masida", "en": "drink", "objectTypes": ["drink"],
+        "id": "masida",
+        "en": "drink",
+        "objectTypes": [
+          "drink"
+        ],
         "placeParticle": "eseo",
-        "past": "\ub9c8\uc168\uc5b4\uc694", "pastRom": "MA-SYEO-SSEO-YO", "pastEn": "drank",
-        "present": "\ub9c8\uc154\uc694", "presentRom": "MA-SYEO-YO", "presentEn": "drink",
-        "future": "\ub9c8\uc2e4 \uac70\uc608\uc694", "futureRom": "MA-SIL GGEO-YE-YO", "futureEn": "will drink"
+        "past": "마셨어요",
+        "pastRom": "MA-SYEO-SSEO-YO",
+        "pastEn": "drank",
+        "present": "마셔요",
+        "presentRom": "MA-SYEO-YO",
+        "presentEn": "drink",
+        "future": "마실 거예요",
+        "futureRom": "MA-SIL GGEO-YE-YO",
+        "futureEn": "will drink"
+      },
+      {
+        "id": "meokda",
+        "en": "eat",
+        "objectTypes": [
+          "food"
+        ],
+        "placeParticle": "eseo",
+        "past": "먹었어요",
+        "pastRom": "MEO-GEO-SSEO-YO",
+        "pastEn": "ate",
+        "present": "먹어요",
+        "presentRom": "MEO-GEO-YO",
+        "presentEn": "eat",
+        "future": "먹을 거예요",
+        "futureRom": "MEO-GEUL GGEO-YE-YO",
+        "futureEn": "will eat"
+      },
+      {
+        "id": "masida",
+        "en": "drink",
+        "objectTypes": [
+          "drink"
+        ],
+        "placeParticle": "eseo",
+        "past": "마셨어요",
+        "pastRom": "MA-SYEO-SSEO-YO",
+        "pastEn": "drank",
+        "present": "마셔요",
+        "presentRom": "MA-SYEO-YO",
+        "presentEn": "drink",
+        "future": "마실 거예요",
+        "futureRom": "MA-SIL GGEO-YE-YO",
+        "futureEn": "will drink"
+      },
+      {
+        "id": "gada",
+        "en": "go",
+        "objectTypes": [],
+        "placeParticle": "e",
+        "past": "갔어요",
+        "pastRom": "GA-SSEO-YO",
+        "pastEn": "went",
+        "present": "가요",
+        "presentRom": "GA-YO",
+        "presentEn": "go",
+        "future": "갈 거예요",
+        "futureRom": "GAL GGEO-YE-YO",
+        "futureEn": "will go"
       }
     ]
   },
   "describe": {
     "subjects": [
-      { "kr": "\ucee4\ud53c", "rom": "KEO-PI", "en": "Coffee", "category": "drink" },
-      { "kr": "\ubb3c", "rom": "MUL", "en": "Water", "category": "drink" },
-      { "kr": "\ubc25", "rom": "BAP", "en": "Food/Rice", "category": "food" },
-      { "kr": "\uae40\uce58", "rom": "GIM-CHI", "en": "Kimchi", "category": "food" }
+      {
+        "kr": "커피",
+        "rom": "KEO-PI",
+        "en": "Coffee",
+        "category": "drink"
+      },
+      {
+        "kr": "물",
+        "rom": "MUL",
+        "en": "Water",
+        "category": "drink"
+      },
+      {
+        "kr": "밥",
+        "rom": "BAP",
+        "en": "Food/Rice",
+        "category": "food"
+      },
+      {
+        "kr": "김치",
+        "rom": "GIM-CHI",
+        "en": "Kimchi",
+        "category": "food"
+      },
+      {
+        "kr": "파스타",
+        "rom": "PA-SEU-TA",
+        "en": "Pasta",
+        "category": "general"
+      },
+      {
+        "kr": "불고기",
+        "rom": "BUL-GO-GI",
+        "en": "Bulgogi (korean bbq beef)",
+        "category": "general"
+      },
+      {
+        "kr": "차",
+        "rom": "CHA",
+        "en": "Tea",
+        "category": "general"
+      },
+      {
+        "kr": "식당",
+        "rom": "SIK-DANG",
+        "en": "Restaurant",
+        "category": "general"
+      },
+      {
+        "kr": "카페",
+        "rom": "KA-PE",
+        "en": "Cafe",
+        "category": "general"
+      },
+      {
+        "kr": "집",
+        "rom": "JIP",
+        "en": "House / home",
+        "category": "general"
+      },
+      {
+        "kr": "학교",
+        "rom": "HAK-GYO",
+        "en": "School",
+        "category": "general"
+      },
+      {
+        "kr": "화장실",
+        "rom": "HWA-JANG-SIL",
+        "en": "Bathroom / restroom",
+        "category": "general"
+      },
+      {
+        "kr": "여기",
+        "rom": "YEO-GI",
+        "en": "Here / this place",
+        "category": "general"
+      },
+      {
+        "kr": "오늘",
+        "rom": "O-NEUL",
+        "en": "Today",
+        "category": "general"
+      },
+      {
+        "kr": "친구",
+        "rom": "CHIN-GU",
+        "en": "Friend",
+        "category": "general"
+      },
+      {
+        "kr": "언어 학교",
+        "rom": "EO-NEO HAK-GYO",
+        "en": "Language school",
+        "category": "general"
+      }
     ],
     "adjectives": [
-      { "id": "delicious", "kr": "\ub9db\uc788\uc5b4\uc694", "rom": "MA-SHI-SSEO-YO", "en": "delicious", "compatibleSubjects": ["food", "drink"] },
-      { "id": "hot", "kr": "\ub728\uac70\uc6cc\uc694", "rom": "TTEU-GEO-WO-YO", "en": "hot", "compatibleSubjects": ["food", "drink"] },
-      { "id": "cold", "kr": "\ucc28\uac00\uc6cc\uc694", "rom": "CHA-GA-WO-YO", "en": "cold", "compatibleSubjects": ["food", "drink"] }
+      {
+        "id": "delicious",
+        "kr": "맛있어요",
+        "rom": "MA-SHI-SSEO-YO",
+        "en": "delicious",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      },
+      {
+        "id": "hot",
+        "kr": "뜨거워요",
+        "rom": "TTEU-GEO-WO-YO",
+        "en": "hot",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      },
+      {
+        "id": "cold",
+        "kr": "차가워요",
+        "rom": "CHA-GA-WO-YO",
+        "en": "cold",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      },
+      {
+        "id": "to_be_delicious",
+        "kr": "맛있다",
+        "rom": "MA-SIT-DA",
+        "en": "to be delicious",
+        "compatibleSubjects": [
+          "food",
+          "drink"
+        ]
+      }
     ],
     "adverbs": [
-      { "kr": "\ub108\ubb34", "rom": "NEO-MU", "en": "too/very" },
-      { "kr": "\uc815\ub9d0", "rom": "JEONG-MAL", "en": "really" },
-      { "kr": "\uc870\uae08", "rom": "JO-GEUM", "en": "a little" }
+      {
+        "kr": "너무",
+        "rom": "NEO-MU",
+        "en": "too/very"
+      },
+      {
+        "kr": "정말",
+        "rom": "JEONG-MAL",
+        "en": "really"
+      },
+      {
+        "kr": "조금",
+        "rom": "JO-GEUM",
+        "en": "a little"
+      }
     ]
   },
   "flashcards": {
     "categories": [
-      { "name": "Greetings", "cards": [
-        { "kr": "\uc548\ub155\ud558\uc138\uc694", "rom": "AN-NYEONG-HA-SE-YO", "en": "Hello" },
-        { "kr": "\uac10\uc0ac\ud569\ub2c8\ub2e4", "rom": "GAM-SA-HAM-NI-DA", "en": "Thank you" },
-        { "kr": "\ub124", "rom": "NE", "en": "Yes" },
-        { "kr": "\uc544\ub2c8\uc694", "rom": "A-NI-YO", "en": "No" }
-      ]},
-      { "name": "Countries", "cards": [
-        { "kr": "\ud55c\uad6d", "rom": "HAN-GUK", "en": "Korea" },
-        { "kr": "\ubbf8\uad6d", "rom": "MI-GUK", "en": "America" },
-        { "kr": "\uc77c\ubcf8", "rom": "IL-BON", "en": "Japan" },
-        { "kr": "\uc911\uad6d", "rom": "JUNG-GUK", "en": "China" },
-        { "kr": "\uc11c\uc6b8", "rom": "SEO-UL", "en": "Seoul" },
-        { "kr": "\ubd80\uc0b0", "rom": "BU-SAN", "en": "Busan" },
-        { "kr": "\uc81c\uc8fc", "rom": "JE-JU", "en": "Jeju" }
-      ]},
-      { "name": "People", "cards": [
-        { "kr": "\uc0ac\ub78c", "rom": "SA-RAM", "en": "person" },
-        { "kr": "\uc774\ub984", "rom": "I-REUM", "en": "name" },
-        { "kr": "\uce5c\uad6c", "rom": "CHIN-GU", "en": "friend" },
-        { "kr": "\uc120\uc0dd\ub2d8", "rom": "SEON-SAENG-NIM", "en": "teacher" },
-        { "kr": "\ud559\uc0dd", "rom": "HAK-SAENG", "en": "student" }
-      ]},
-      { "name": "Places", "cards": [
-        { "kr": "\uc9d1", "rom": "JIP", "en": "house/home" },
-        { "kr": "\ud559\uad50", "rom": "HAK-GYO", "en": "school" },
-        { "kr": "\ud68c\uc0ac", "rom": "HOE-SA", "en": "company/office" },
-        { "kr": "\ud654\uc7a5\uc2e4", "rom": "HWA-JANG-SIL", "en": "bathroom" },
-        { "kr": "\uce74\ud398", "rom": "KA-PE", "en": "cafe" },
-        { "kr": "\uc2dd\ub2f9", "rom": "SIK-DANG", "en": "restaurant" },
-        { "kr": "\uacf5\ud56d", "rom": "GONG-HANG", "en": "airport" }
-      ]},
-      { "name": "Food & Drink", "cards": [
-        { "kr": "\ubb3c", "rom": "MUL", "en": "water" },
-        { "kr": "\ubc25", "rom": "BAP", "en": "rice/meal" },
-        { "kr": "\ucee4\ud53c", "rom": "KEO-PI", "en": "coffee" },
-        { "kr": "\uae40\uce58", "rom": "GIM-CHI", "en": "kimchi" }
-      ]},
-      { "name": "Grammar Words", "cards": [
-        { "kr": "\uc774\uc5d0\uc694", "rom": "I-E-YO", "en": "is (after consonant)" },
-        { "kr": "\uc608\uc694", "rom": "YE-YO", "en": "is (after vowel)" },
-        { "kr": "\ub294", "rom": "NEUN", "en": "topic marker (after vowel)" },
-        { "kr": "\uc740", "rom": "EUN", "en": "topic marker (after consonant)" },
-        { "kr": "\uc774", "rom": "I", "en": "subject marker (after consonant)" },
-        { "kr": "\uac00", "rom": "GA", "en": "subject marker (after vowel)" },
-        { "kr": "\ubb50", "rom": "MWO", "en": "what" },
-        { "kr": "\uc5ec\uae30", "rom": "YEO-GI", "en": "here" },
-        { "kr": "\uc774\uac70", "rom": "I-GEO", "en": "this (thing)" },
-        { "kr": "\uc800", "rom": "JEO", "en": "I (polite)" }
-      ]},
-      { "name": "Hangul Consonants", "cards": [
-        { "kr": "\u3131", "rom": "G/K", "en": "giyeok" },
-        { "kr": "\u3134", "rom": "N", "en": "nieun" },
-        { "kr": "\u3137", "rom": "D/T", "en": "digeut" },
-        { "kr": "\u3139", "rom": "R/L", "en": "rieul" },
-        { "kr": "\u3141", "rom": "M", "en": "mieum" },
-        { "kr": "\u3142", "rom": "B/P", "en": "bieup" },
-        { "kr": "\u3145", "rom": "S", "en": "siot" },
-        { "kr": "\u3147", "rom": "NG (silent)", "en": "ieung" },
-        { "kr": "\u3148", "rom": "J", "en": "jieut" },
-        { "kr": "\u314A", "rom": "CH", "en": "chieut" },
-        { "kr": "\u314B", "rom": "K", "en": "kieuk" },
-        { "kr": "\u314C", "rom": "T", "en": "tieut" },
-        { "kr": "\u314D", "rom": "P", "en": "pieup" },
-        { "kr": "\u314E", "rom": "H", "en": "hieut" }
-      ]},
-      { "name": "Hangul Vowels", "cards": [
-        { "kr": "\u3150", "rom": "A", "en": "a (as in father)" },
-        { "kr": "\u3163", "rom": "I", "en": "i (as in see)" },
-        { "kr": "\u3160", "rom": "U", "en": "u (as in moon)" },
-        { "kr": "\u3161", "rom": "EU", "en": "eu (no English equiv)" },
-        { "kr": "\u3153", "rom": "EO", "en": "eo (as in up)" },
-        { "kr": "\u3157", "rom": "O", "en": "o (as in go)" },
-        { "kr": "\u3151", "rom": "YA", "en": "ya" },
-        { "kr": "\u3155", "rom": "YEO", "en": "yeo" },
-        { "kr": "\u3159", "rom": "YO", "en": "yo" },
-        { "kr": "\u315C", "rom": "YU", "en": "yu" }
-      ]}
+      {
+        "name": "Greetings",
+        "cards": [
+          {
+            "kr": "안녕하세요",
+            "rom": "AN-NYEONG-HA-SE-YO",
+            "en": "Hello"
+          },
+          {
+            "kr": "감사합니다",
+            "rom": "GAM-SA-HAM-NI-DA",
+            "en": "Thank you"
+          },
+          {
+            "kr": "네",
+            "rom": "NE",
+            "en": "Yes"
+          },
+          {
+            "kr": "아니요",
+            "rom": "A-NI-YO",
+            "en": "No"
+          }
+        ]
+      },
+      {
+        "name": "Countries",
+        "cards": [
+          {
+            "kr": "한국",
+            "rom": "HAN-GUK",
+            "en": "Korea"
+          },
+          {
+            "kr": "미국",
+            "rom": "MI-GUK",
+            "en": "America"
+          },
+          {
+            "kr": "일본",
+            "rom": "IL-BON",
+            "en": "Japan"
+          },
+          {
+            "kr": "중국",
+            "rom": "JUNG-GUK",
+            "en": "China"
+          },
+          {
+            "kr": "서울",
+            "rom": "SEO-UL",
+            "en": "Seoul"
+          },
+          {
+            "kr": "부산",
+            "rom": "BU-SAN",
+            "en": "Busan"
+          },
+          {
+            "kr": "제주",
+            "rom": "JE-JU",
+            "en": "Jeju"
+          }
+        ]
+      },
+      {
+        "name": "People",
+        "cards": [
+          {
+            "kr": "사람",
+            "rom": "SA-RAM",
+            "en": "person"
+          },
+          {
+            "kr": "이름",
+            "rom": "I-REUM",
+            "en": "name"
+          },
+          {
+            "kr": "친구",
+            "rom": "CHIN-GU",
+            "en": "friend"
+          },
+          {
+            "kr": "선생님",
+            "rom": "SEON-SAENG-NIM",
+            "en": "teacher"
+          },
+          {
+            "kr": "학생",
+            "rom": "HAK-SAENG",
+            "en": "student"
+          }
+        ]
+      },
+      {
+        "name": "Places",
+        "cards": [
+          {
+            "kr": "집",
+            "rom": "JIP",
+            "en": "house/home"
+          },
+          {
+            "kr": "학교",
+            "rom": "HAK-GYO",
+            "en": "school"
+          },
+          {
+            "kr": "회사",
+            "rom": "HOE-SA",
+            "en": "company/office"
+          },
+          {
+            "kr": "화장실",
+            "rom": "HWA-JANG-SIL",
+            "en": "bathroom"
+          },
+          {
+            "kr": "카페",
+            "rom": "KA-PE",
+            "en": "cafe"
+          },
+          {
+            "kr": "식당",
+            "rom": "SIK-DANG",
+            "en": "restaurant"
+          },
+          {
+            "kr": "공항",
+            "rom": "GONG-HANG",
+            "en": "airport"
+          }
+        ]
+      },
+      {
+        "name": "Food & Drink",
+        "cards": [
+          {
+            "kr": "물",
+            "rom": "MUL",
+            "en": "water"
+          },
+          {
+            "kr": "밥",
+            "rom": "BAP",
+            "en": "rice/meal"
+          },
+          {
+            "kr": "커피",
+            "rom": "KEO-PI",
+            "en": "coffee"
+          },
+          {
+            "kr": "김치",
+            "rom": "GIM-CHI",
+            "en": "kimchi"
+          }
+        ]
+      },
+      {
+        "name": "Grammar Words",
+        "cards": [
+          {
+            "kr": "이에요",
+            "rom": "I-E-YO",
+            "en": "is (after consonant)"
+          },
+          {
+            "kr": "예요",
+            "rom": "YE-YO",
+            "en": "is (after vowel)"
+          },
+          {
+            "kr": "는",
+            "rom": "NEUN",
+            "en": "topic marker (after vowel)"
+          },
+          {
+            "kr": "은",
+            "rom": "EUN",
+            "en": "topic marker (after consonant)"
+          },
+          {
+            "kr": "이",
+            "rom": "I",
+            "en": "subject marker (after consonant)"
+          },
+          {
+            "kr": "가",
+            "rom": "GA",
+            "en": "subject marker (after vowel)"
+          },
+          {
+            "kr": "뭐",
+            "rom": "MWO",
+            "en": "what"
+          },
+          {
+            "kr": "여기",
+            "rom": "YEO-GI",
+            "en": "here"
+          },
+          {
+            "kr": "이거",
+            "rom": "I-GEO",
+            "en": "this (thing)"
+          },
+          {
+            "kr": "저",
+            "rom": "JEO",
+            "en": "I (polite)"
+          }
+        ]
+      },
+      {
+        "name": "Hangul Consonants",
+        "cards": [
+          {
+            "kr": "ㄱ",
+            "rom": "G/K",
+            "en": "giyeok"
+          },
+          {
+            "kr": "ㄴ",
+            "rom": "N",
+            "en": "nieun"
+          },
+          {
+            "kr": "ㄷ",
+            "rom": "D/T",
+            "en": "digeut"
+          },
+          {
+            "kr": "ㄹ",
+            "rom": "R/L",
+            "en": "rieul"
+          },
+          {
+            "kr": "ㅁ",
+            "rom": "M",
+            "en": "mieum"
+          },
+          {
+            "kr": "ㅂ",
+            "rom": "B/P",
+            "en": "bieup"
+          },
+          {
+            "kr": "ㅅ",
+            "rom": "S",
+            "en": "siot"
+          },
+          {
+            "kr": "ㅇ",
+            "rom": "NG (silent)",
+            "en": "ieung"
+          },
+          {
+            "kr": "ㅈ",
+            "rom": "J",
+            "en": "jieut"
+          },
+          {
+            "kr": "ㅊ",
+            "rom": "CH",
+            "en": "chieut"
+          },
+          {
+            "kr": "ㅋ",
+            "rom": "K",
+            "en": "kieuk"
+          },
+          {
+            "kr": "ㅌ",
+            "rom": "T",
+            "en": "tieut"
+          },
+          {
+            "kr": "ㅍ",
+            "rom": "P",
+            "en": "pieup"
+          },
+          {
+            "kr": "ㅎ",
+            "rom": "H",
+            "en": "hieut"
+          }
+        ]
+      },
+      {
+        "name": "Hangul Vowels",
+        "cards": [
+          {
+            "kr": "ㅐ",
+            "rom": "A",
+            "en": "a (as in father)"
+          },
+          {
+            "kr": "ㅣ",
+            "rom": "I",
+            "en": "i (as in see)"
+          },
+          {
+            "kr": "ㅠ",
+            "rom": "U",
+            "en": "u (as in moon)"
+          },
+          {
+            "kr": "ㅡ",
+            "rom": "EU",
+            "en": "eu (no English equiv)"
+          },
+          {
+            "kr": "ㅓ",
+            "rom": "EO",
+            "en": "eo (as in up)"
+          },
+          {
+            "kr": "ㅗ",
+            "rom": "O",
+            "en": "o (as in go)"
+          },
+          {
+            "kr": "ㅑ",
+            "rom": "YA",
+            "en": "ya"
+          },
+          {
+            "kr": "ㅕ",
+            "rom": "YEO",
+            "en": "yeo"
+          },
+          {
+            "kr": "ㅙ",
+            "rom": "YO",
+            "en": "yo"
+          },
+          {
+            "kr": "ㅜ",
+            "rom": "YU",
+            "en": "yu"
+          }
+        ]
+      },
+      {
+        "name": "Expressions",
+        "cards": [
+          {
+            "kr": "저는 ~을/를 먹어요",
+            "rom": "JEO-NEUN ~ EUL/REUL MEO-GEO-YO",
+            "en": "I eat [something]"
+          },
+          {
+            "kr": "저는 ~을/를 마셔요",
+            "rom": "JEO-NEUN ~ EUL/REUL MA-SYEO-YO",
+            "en": "I drink [something]"
+          },
+          {
+            "kr": "~에 가요",
+            "rom": "~ E GA-YO",
+            "en": "I go to [place]"
+          },
+          {
+            "kr": "~에서 ~을/를 먹어요",
+            "rom": "~ E-SEO ~ EUL/REUL MEO-GEO-YO",
+            "en": "I eat [something] at [place]"
+          },
+          {
+            "kr": "여기는 ~이에요/예요",
+            "rom": "YEO-GI-NEUN ~ I-E-YO/YE-YO",
+            "en": "Here is [place/thing]"
+          },
+          {
+            "kr": "오늘 뭐 먹어요?",
+            "rom": "O-NEUL MWO MEO-GEO-YO",
+            "en": "What are you eating today?"
+          }
+        ]
+      }
     ]
   }
 }
